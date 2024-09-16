@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Simulator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Typing Simulator</h1>
+  <div id="tabs">
+    <button class="tablink" data-tab="TextInput">Text Input</button>
+    <button class="tablink" data-tab="SpeedSettings">Speed Settings</button>
+    <button class="tablink" data-tab="About">About</button>
+  </div>
+
+  <div id="TextInput" class="tabcontent">
+    <label for="textInput">Enter the text you want to type:</label>
+    <textarea id="textInput" rows="10" cols="50"></textarea>
+    <button id="startButton">Start Typing</button>
+    <p id="status"></p>
+    <p id="countdown"></p> <!-- Added countdown display -->
+  </div>
+
+  <div id="SpeedSettings" class="tabcontent" style="display:none;">
+    <label for="wpmRange">Typing speed (words per minute): <span id="wpmValue">60</span></label>
+    <input type="range" id="wpmRange" min="1" max="500" value="60">
+
+    <label><input type="checkbox" id="includePauses"> Include Pauses</label>
+    <div id="pausesSettings" style="display:none;">
+      <label for="pauseSentence">Pause after sentences (seconds):</label>
+      <input type="number" id="pauseSentence" min="0" step="0.1" value="0">
+
+      <label for="pauseParagraph">Pause after paragraphs (seconds):</label>
+      <input type="number" id="pauseParagraph" min="0" step="0.1" value="0">
+
+      <label for="pauseMidSentence">Pause mid-sentence (seconds):</label>
+      <input type="number" id="pauseMidSentence" min="0" step="0.1" value="0">
+
+      <label for="pauseMin">Pause time range minimum (seconds):</label>
+      <input type="number" id="pauseMin" min="0" step="0.1" value="1">
+
+      <label for="pauseMax">Pause time range maximum (seconds):</label>
+      <input type="number" id="pauseMax" min="0" step="0.1" value="3">
+    </div>
+  </div>
+
+  <div id="About" class="tabcontent" style="display:none;">
+    <h2>About Typing Simulator</h2>
+    <p>Developed by David Camick with the help of ChatGPT.</p>
+    <p>This extension simulates typing text into web pages, making it appear as if it was typed manually.</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

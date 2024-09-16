@@ -1,0 +1,107 @@
+#typingSimulatorUI {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 350px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 9999;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #typingSimulatorUI h2 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  #typingSimulatorUI label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #typingSimulatorUI textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+  }
+  
+  #typingSimulatorUI input[type="range"] {
+    width: 100%;
+  }
+  
+  #typingSimulatorUI button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #typingSimulatorUI button:hover {
+    background-color: #45a049;
+  }
+  
+  #typingSimulatorUI #closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    color: #aaa;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #typingSimulatorUI #closeButton:hover {
+    color: #000;
+  }
+  
+  #typingSimulatorUI #tabs {
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  #typingSimulatorUI .tablink {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+  }
+  
+  #typingSimulatorUI .tablink:hover {
+    background-color: #ddd;
+  }
+  
+  #typingSimulatorUI .tabcontent {
+    display: none;
+    padding: 10px 0;
+  }
+  
+  #typingSimulatorUI #countdown {
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  #typingSimulatorUI #pausesSettings label {
+    margin-top: 5px;
+  }
+  
+  #typingSimulatorUI #pausesSettings input {
+    width: 100%;
+  }
+  
+  #typingSimulatorUI input[type="number"] {
+    width: 100%;
+  }
+  
