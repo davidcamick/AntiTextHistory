@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Typing Simulator",
+    "version": "1.1",
+    "description": "Simulates typing text into web pages.",
+    "permissions": ["scripting", "activeTab", "storage", "debugger"],
+    "host_permissions": [
+      "https://*/*",
+      "http://*/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "web_accessible_resources": [{
+      "resources": ["content.css"],
+      "matches": ["<all_urls>"]
+    }]
+  }
+  
